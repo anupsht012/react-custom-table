@@ -1,0 +1,41 @@
+.dialog{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top:0;
+    left:0;
+    height:100vh;
+    z-index: 1999;
+    width: 100vw;
+    .backdrop{
+        height:100%;
+        width: 100%;
+        position:absolute;
+        top:0;
+        left:0;
+        background-color: rgba(0,0,0,0.42);
+    }
+    .dialog-box{
+        position: relative;
+        z-index: 1;
+        animation: fadeInTop .3s;
+    }
+}
+
+.test{
+    background:white;
+    padding:16px;
+    border-radius: 8px;
+}
+
+
+@keyframes fadeInTop{
+    from{
+        opacity: 0;
+        transform: translateY(-100%);
+    }to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
