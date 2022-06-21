@@ -83,12 +83,12 @@ function App() {
   </div>);
   return (
     <div className="App">
-      {/* <Table title={footer} headers={Headers} data={MOCK}/> */}
-      <Dialog/>
-      {/* <Toast
+      <Table title={footer} headers={Headers} data={MOCK}/>
+      {/* <Dialog/> */}
+      <Toast
       toastList={testList}
       position="bottom-right"
-      /> */}
+      />
     </div>
   );
 }
